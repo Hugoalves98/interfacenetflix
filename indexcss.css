@@ -1,0 +1,172 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 20px;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Filme principal */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(cf.jpg);
+    
+    height: 800px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .titulo {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS';
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+
+}
+
+.filme-principal .botao{
+    background-color: rgba(0,0,0,.50); 
+    border: none; 
+    color: white;
+
+    padding: 15px;
+    margin-right: 5px;
+    margin-left: 20px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+/* Nova página quando apertar o assistir agora */
+
+.filme-principal .bg-modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.75);
+    position: fixed;
+    z-index: 2;
+    top: 100%;
+    display: block;
+    transition: 0s;
+}
+
+.filme-principal .modal {
+    width: 65%;
+    height: 75%;
+    background-color: rgba(0,0,0,.75);
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin: 100px auto auto auto;
+}
+
+.modal span {
+    float: right;
+    font-size: 15px;
+    color: #AAA;
+    margin: 15px 15px;
+    transition: 0s;
+    cursor: pointer;
+}
+
+.modal span:hover {
+    color: #990000;
+    transition: 0s;
+}
+
+.filme-principal .modalinfo {
+    width: 55%;
+    height: 55%;
+    background-color: rgb(23, 23, 23, 0.75);
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin: 100px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.modalinfo span {
+    font-size: 15px;
+    color: #AAA;
+    margin: 15px 15px;
+    transition: 0s;
+    cursor: pointer;    
+    display: flex;
+    justify-content: right;
+}
+
+.modalinfo span:hover {
+    color: red;
+    transition: 0s;
+}
+
+/* ------------------------------ */
+
+.botao:hover {
+    background-color: white;
+    color: black;    
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.filme-principal .container {
+    width: 75%;
+}
+/* Sequência de carrosel */
+
+.carrosel-filmes h4 {
+    font-size: 1.5rem;
+    margin: 5px auto 5px 20px;
+    color: #AAA;    
+}
+
+

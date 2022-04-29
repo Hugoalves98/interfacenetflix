@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexcss.css">
+
+    <!-- responsividade -->
+    <link rel="stylesheet" href="responsive.css">
+
+    <!--owl css carrocel -->
+    <link rel="stylesheet" href="/owl.carousel.min.css">
+    <link rel="stylesheet" href="/owl.theme.default.min.css">
+
+    
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container">            
+            <h2 class="logo">NETFLIX</h2>            
+            <nav>                
+                <a href="#inicio">Início</a>
+                <a href="#lançamentos">Lançamentos</a>
+                <a href="#series">Séries</a>
+                <a href="#filmes">Filmes</a>                
+            </nav>
+        </div>
+    </header>
+
+    <main> <a name="inicio">
+        <div class="filme-principal">                  
+            <div class="container">                
+                <h3 class="titulo">CHICAGO FIRE 10º Temporada</h3>
+                <p class="descricao">Após uma perigosa ligação de vida ou morte e um ano sem precedentes, a equipe não tem escolha a não ser se unir, já que mais situações emocionantes e drama em brasa estão sempre ao virar da esquina. Os mais corajosos de Chicago estão prontos para enfrentar o próximo grande desafio, mais fortes do que nunca.</p>           
+                
+                    <button role="button" class="botao open-modal" onclick="abrirModal()">
+                        <i class="fa-solid fa-play"></i>
+                        ASSISTIR AGORA                        
+                    </button>
+
+                    <div class="bg-modal" id="modal">
+                        <div class="modal">
+                            <span class="close" onclick="fecharModal()"><i class="fa-solid fa-x"></i>
+                            </span>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xbaBRnK79b0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <button role="button" class="botao" onclick="abririnfoModal()">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                    <div class="bg-modal" id="modal-info">
+                        <div class="modalinfo">
+                            <span class="close" onclick="fecharinfoModal()"><i class="fa-solid fa-x"></i>
+                            </span>                            
+                            O principal ponto que ficou no ar, com o fim da nona temporada, foi o destino do Esquadrão. Todos os membros acabaram entre a vida e a morte no último chamado da temporada, enquanto eles estavam debaixo d’água, com um barco virando com eles. Intenso!<br> Aliás, é possível que um deles não sobreviva, assim como aconteceu quando perdemos Otis no início da oitava temporada.<br>O destino de Kelly Severide é o mais importante, afinal, ele terminou a temporada também pedindo Stella Kidd em casamento. Caso ele sobreviva, certamente veremos o casamento dos dois na décima temporada.<br> Mas caso ele não retorne, Kidd terá uma trágica história para contar na próxima temporada.<br>
+                            Outra história em aberto – mas que ganhou parcialmente resolução – é o relacionamento de Casey e Brett. Eles assumiram que são apaixonados um pelo outro e, agora, resolveram se entregar a esse amor. Após muito resistirem, em parte por conta de Gaby, Casey entendeu que ele agora ama Brett. E vice-versa. Logo, na décima temporada, veremos mais desse romance.<br>E ainda… Alguns pontos extras da próxima temporada incluem um novo negócio para Gallo, Ritter e Violet, que querem ganhar mais dinheiro. A série não entregou o que eles vão fazer, mas eles estão inspirados pelo sucesso do Molly’s. Será que vem um restaurante por aí? Igualmente, os fãs também precisam saber sobre o que acontecerá com o Chefe Bolden, se ele deixará mesmo o 51 e se Stella assumirá o posto de Tenente por lá. Você está animado para a décima temporada de Chicago Fire?
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <section>
+    <div class="carrosel-filmes">
+        <h4>Lançamentos<a name="lançamentos"></h4> 
+        <div class="owl-carousel owl-theme">
+            <div class="item">                
+                <img class="box-filme" src="imgs/mini1.jpg" >
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imgs/mini2.jpg" >
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imgs/mini3.jpg" >
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imgs/mini4.jpg" >
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imgs/mini5.jpg" >
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imgs/mini6.jpg" >
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imgs/mini7.jpg" >
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imgs/mini8.jpg" >
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imgs/mini9.jpg" >
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imgs/mini10.jpg" >
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <div class="carrosel-filmes">
+            <h4>Séries<a name="series"></h4> 
+            <div class="owl-carousel owl-theme">
+                <div class="item">                
+                    <img class="box-filme" src="sériesimg/serie1.jpg" >
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="sériesimg/serie2.jpg" >
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="sériesimg/serie3.jpg" >
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="sériesimg/serie4.jpg" >
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="sériesimg/serie5.jpg" >
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="sériesimg/serie6.jpg" >
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="sériesimg/serie7.jpg" >
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="sériesimg/serie8.jpg" >
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="sériesimg/serie9.jpg" >
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="sériesimg/serie10.jpg" >
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section>
+            <div class="carrosel-filmes">
+                <h4>Filmes<a name="filmes"></h4> 
+                <div class="owl-carousel owl-theme">
+                    <div class="item">                
+                        <img class="box-filme" src="filmes/filme1.jpg" >
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="filmes/filme2.jpg" >
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="filmes/filme3.jpg" >
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="filmes/filme4.jpg" >
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="filmes/filme5.jpg" >
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="filmes/filme6.jpg" >
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="filmes/filme7.jpg" >
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="filmes/filme8.jpg" >
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="filmes/filme9.jpg" >
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="filmes/filme10.jpg" >
+                    </div>
+                </div>
+            </div>
+            </section>
+    
+
+
+
+    <script src="https://kit.fontawesome.com/c987ea2111.js" crossorigin="anonymous"></script>
+    <script src="/jquery.min.js"></script>
+    <script src="/owl.carousel.min.js"></script>
+    <script src="carouseljquery.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
